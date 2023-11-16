@@ -1,0 +1,266 @@
+/**
+ * Workit Landing Page - Style Guide
+ * 
+ * This CSS file contains the styles for the Workit landing page, following the design
+ * system provided in the Figma layout. It covers color schemes, typography, and button 
+ * styles to ensure consistency and adherence to the design specifications.
+ * 
+ * Colors:
+ * - Dark Blue: #24053E (Primary)
+ * - Vibrant Teal: #44FFA1 (Accent)
+ * - Muted Purple: #5B4D62 (Secondary)
+ * - Light Gray: #FCFBFF (Background)
+ * - Pure White: #FFFFFF (For text and contrast)
+ * 
+ * Typography:
+ * - Headings and body text are styled according to the design system's specifications
+ *   using the 'Fraunces' and 'Manrope' font families from Google Fonts.
+
+ Heading L Fraunces 144 Semi Bold 80px  80px Line Spacing
+ Heading M Fraunces 144 Semi Bold 56px  64px Line Spacing
+ Heading S Fraunces 144 Semi Bold 32px  40px Line Spacing
+
+ Body Manrope Regular 18px 32px Line Spacing
+
+ Folders:
+ starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf
+ starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf
+ starter-code/assets/fonts/manrope/static/Manrope-Regular.ttf
+ starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf
+
+
+ * 
+ * Buttons:
+ * - Primary and secondary button styles are defined with hover states to enhance
+ *   user interaction.
+ * 
+ * The layout is responsive, with adjustments for mobile (375px) and desktop (1440px) widths.
+ * 
+ * Author: [Your Name]
+ * Date: [Date of file creation]
+ */
+
+ /* Set fonts from assets/fonts folder that are fraunces and Manrope */
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/manrope/static/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Set global styles for the page */
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #24053E;
+  background-color: #FCFBFF;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Style for <header class="hero"> */
+
+header.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../images/curve.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: 0;
+}
+
+header.hero h1 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+header.hero h2 {
+  color: #44FFA1;
+  text-align: center;
+}
+
+#image-hero {
+    width: 80%;
+    object-position: center;
+    object-fit: cover;
+    z-index: 1;
+    
+    
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.pattern-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 35%;
+}
+
+/* Logo position top left */
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+}
+
+/* Nav should be top right color white and underlined in #44FFA1*/
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    color: #FFFFFF; 
+    text-decoration: underline #44FFA1;
+}
+
+.learn-more {
+    position: relative;
+    padding: 2rem;
+    color: #24053E;
+    background-color: #44FFA1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+/* Align button to the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+.learn-more:hover {
+    background-color: #24053E;
+    color: #44FFA1;
+    border: 2px solid #44FFA1;
+    cursor: pointer;
+}
+
+/* Style for <section class="features"> */
+
+section.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+#one, #two, #three {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 30.5px;
+    border: 1px solid var(--Davys-Grey, #584D62);
+}
+
+
+
+
+
+
+
+
+
