@@ -244,16 +244,31 @@ section.features {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 100px 0;
+  width: auto;
+  height: 960px;
+  flex-shrink: 0;
+  background-image: url('../images/curve-2.svg');
+  fill: var(--Ghost-White, #FCF8FF);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
 }
 
+/* Align the thre items horizontally in the same line in wide screen */
 #one, #two, #three {
     width: 56px;
     height: 56px;
-    flex-shrink: 0;
-    border-radius: 30.5px;
+    border-radius: 100%;
     border: 1px solid var(--Davys-Grey, #584D62);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 50px;
+    flex-direction: row;
 }
 
 
