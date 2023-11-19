@@ -165,12 +165,9 @@ header.hero h2 {
 }
 
 #image-hero {
-    width: 80%;
-    object-position: center;
-    object-fit: cover;
-    z-index: 1;
-    
-    
+    width: 715px;
+    height: 427px;
+    flex-shrink: 0;
 }
 
 .centered {
@@ -238,44 +235,84 @@ nav {
     cursor: pointer;
 }
 
-/* Style for <section class="features"> */
+/* Style for <section id="features"> */
 
-section.features {
+#features {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 100px 0;
+  padding: 165px 165px; /* Add padding to the left and right */
   width: auto;
-  height: 960px;
+  height: auto;
   flex-shrink: 0;
   background-image: url('../images/curve-2.svg');
   fill: var(--Ghost-White, #FCF8FF);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-
+  gap: 26px; /* Add gap to create a distance of 26px between the features */
 }
 
-/* Align the thre items horizontally in the same line in wide screen */
+/* Align the three items horizontally in the same line in wide screen */
 #one, #two, #three {
     width: 56px;
     height: 56px;
     border-radius: 100%;
     border: 1px solid var(--Davys-Grey, #584D62);
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Change direction to column to place text below the numbers */
     text-align: center;
-    margin: 0 50px;
-    flex-direction: row;
+    margin: 20px; /* Add margin to separate the items */
+}
+
+#one h3, #two h3, #three h3 {
+    margin: 10px 0 0 0; /* Add margin to the top to separate the text from the numbers */
 }
 
 
+#cta {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1112px;
+  height: 647.743px;
+  margin-left: 165px;
+  margin-right: 165px;
+  padding-left: 300px;
+}
 
+.pattern-2 {
+  width: 450.287px;
+  height: 453px;
+  flex-shrink: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
+#cta-text {
+  width: 730px;
+  height: 413px;
+  flex-shrink: 0;
+  background: var(--Dark-Purple, #24053E);
+  color: white;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  font-size: 18px;
+}
 
-
+.apply-access {
+  width: 190px;
+  height: 61px;
+  flex-shrink: 0;
+  background: var(--Eucaplyptus, #44FFA1);
+  margin-top: 32px;
+  margin-bottom: 62px;
+}
 
 
 
