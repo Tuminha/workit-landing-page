@@ -44,7 +44,7 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url('../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype');
+  src: url('../starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -52,7 +52,7 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url('../fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
+  src: url('../starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -60,7 +60,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/manrope/static/Manrope-Regular.ttf') format('truetype');
+  src: url('../starter-code/assets/fonts/manrope/static/Manrope-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -68,7 +68,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+  src: url('../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -145,7 +145,7 @@ header.hero {
   justify-content: center;
   width: auto;
   height: 730px;
-  background-image: url('../images/curve.svg');
+  background-image: url('../starter-code/assets/images/curve.svg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
