@@ -143,7 +143,8 @@ header.hero {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  width: auto;
+  height: 730px;
   background-image: url('../images/curve.svg');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -155,8 +156,10 @@ header.hero h1 {
   color: #FFFFFF;
   text-align: center;
   margin-top: 150px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-top: 160px;
+  width: 635px;
 }
 
 header.hero h2 {
@@ -210,7 +213,7 @@ nav {
     color: #24053E;
     background-color: #44FFA1;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 /* Align button to the center */
     display: flex;
     justify-content: center;
@@ -260,9 +263,9 @@ nav {
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     display: flex;
-    flex-direction: column; /* Change direction to column to place text below the numbers */
+    flex-direction: row; /* Change direction to column to place text below the numbers */
     text-align: center;
-    margin: 20px; /* Add margin to separate the items */
+    margin: 60px; /* Add margin to separate the items */
 }
 
 #one h3, #two h3, #three h3 {
@@ -273,7 +276,7 @@ nav {
 #cta {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
   max-width: 1112px;
   height: 647.743px;
@@ -285,6 +288,7 @@ nav {
 .pattern-2 {
   width: 450.287px;
   height: 453px;
+  justify-content: flex-start;
   flex-shrink: 0;
   z-index: -1;
   position: absolute;
@@ -299,9 +303,8 @@ nav {
   background: var(--Dark-Purple, #24053E);
   color: white;
   padding-left: 65px;
-  padding-right: 65px;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-right: 100px;
+  padding-top: 50px;
   font-size: 18px;
 }
 
@@ -312,6 +315,159 @@ nav {
   background: var(--Eucaplyptus, #44FFA1);
   margin-top: 32px;
   margin-bottom: 62px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #FFFFFF;
+  padding: 165px 165px;
+}
+
+/* Responsive for iphone and tablet - makes the three columns stack on top of each other instead of next to each other  and all the rest of the content to be centered */
+
+@media (max-width: 768px) {
+  header.hero {
+    height: 100vh;
+  }
+
+  header.hero h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+  }
+
+  header.hero h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #image-hero {
+    width: 300px;
+    height: 180px;
+  }
+
+  #logo {
+    padding: 1rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  #features {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #one, #two, #three {
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  #cta {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #cta-text {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .apply-access {
+    margin: 0;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+/* Responsive for mobile - makes the three columns stack on top of each other instead of next to each other  and all the rest of the content to be centered */
+
+@media (max-width: 375px) {
+  header.hero {
+    height: 100vh;
+  }
+
+  header.hero h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 100px;
+    width: 300px;
+  }
+
+  header.hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #image-hero {
+    width: 300px;
+    height: 180px;
+  }
+
+  #logo {
+    padding: 1rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  #features {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #one, #two, #three {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    text-align: center; /* Center the text */
+  }
+
+  #cta {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #cta-text {
+    width: 300px;
+    height: 300px;
+    padding: 20px; /* Add padding to the testimonial box */
+    margin: 0;
+  }
+
+  .apply-access {
+    margin: 0;
+  }
+
+  footer {
+    padding: 0;
+  }
 }
 
 
