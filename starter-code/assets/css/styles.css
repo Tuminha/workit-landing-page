@@ -367,7 +367,8 @@ footer {
 
   #features {
     flex-direction: column;
-    padding: 0;
+    padding: 10px;
+    margin: auto;
   }
 
   #one, #two, #three {
@@ -388,10 +389,13 @@ footer {
     height: 300px;
     padding: 20px;
     margin: 0;
+    height: 400px;
   }
 
   .apply-access {
-    margin: 0;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
   }
 
   footer {
